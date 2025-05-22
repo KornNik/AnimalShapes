@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cc79d1ef6fdfb7499b29bc6d0a54ca1, type: 3}
+  m_Name: ShapeBundle
+  m_EditorClassIdentifier: 
+  _shapes:
+    m_keys: 010000000200000003000000
+    m_values:
+    - {fileID: 11400000, guid: 0b3cf41621fb6994ea838fdb3f617e9a, type: 2}
+    - {fileID: 11400000, guid: cee289af85b1a3d4ba43a155bfc8c6c6, type: 2}
+    - {fileID: 11400000, guid: 75948d51b490f564f9f123481501fb09, type: 2}
+  _insideImages:
+    m_keys: 010000000200000003000000
+    m_values:
+    - {fileID: 11400000, guid: 89dddacd5a6faec49bfcc094851f49c5, type: 2}
+    - {fileID: 11400000, guid: c72f2abebb20d664b897894e0dcc6f7f, type: 2}
+    - {fileID: 11400000, guid: 7fc9348885ec3c842856f3e7f0309a14, type: 2}
+  _colors:
+  - {r: 0.9056604, g: 0.88053095, b: 0.36311856, a: 1}
+  - {r: 0.9339623, g: 0.36565503, b: 0.36565503, a: 1}
+  - {r: 0.40530434, g: 0.56817895, b: 0.8679245, a: 1}
+  - {r: 0.6205908, g: 0.8584906, b: 0.31990921, a: 1}
+  - {r: 0.58740354, g: 0.36832502, b: 0.8773585, a: 1}
+  _shapesCount: 30
+  _minimalShapeGroup: 3
