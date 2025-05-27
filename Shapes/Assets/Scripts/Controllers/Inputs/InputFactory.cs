@@ -11,10 +11,12 @@ namespace Behaviours
             {
                 return new MouseInput();
             }
-            else
+            else if(Application.platform==RuntimePlatform.Android)
             {
                 return new TouchScreenInput();
             }
+
+            return new TouchScreenInput();
         }
     }
 }

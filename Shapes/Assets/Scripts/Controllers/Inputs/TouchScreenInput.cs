@@ -20,19 +20,20 @@ namespace Inputs
             _touch = Touch.Touch.fingers.FirstOrDefault();
             var inputTouchPosition = _touch.currentTouch.screenPosition;
             var inputTouchPositionWithDepth = new Vector3(inputTouchPosition.x,
-                inputTouchPosition.y, Mathf.Abs(Camera.transform.position.z));
+                inputTouchPosition.y, Mathf.Abs(_camera.transform.position.z));
             _screenClickPosition = Camera.ScreenToWorldPoint(inputTouchPositionWithDepth);
+            Debug.Log("Touch");
             return _screenClickPosition;
         }
         protected override Ray GetScreenInputRay()
         {
-            _touch = Touch.Touch.fingers.FirstOrDefault();
-            var inputTouchPosition = _touch.currentTouch.screenPosition;
+            var inputTouchPosition = GetScreenInputPosition();
             var ray = Camera.ScreenPointToRay(inputTouchPosition);
             return ray;
         }
         protected override bool IsTouchingPerform()
         {
+            Debug.Log($"Touch = {Touch.Touch.activeTouches.Count}");
             var isTouching = Touch.Touch.activeTouches.Count > 0;
             return isTouching;
         }
