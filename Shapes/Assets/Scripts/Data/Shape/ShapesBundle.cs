@@ -5,14 +5,12 @@ namespace Data
 {
     enum ShapeType
     {
-        None,
         Square,
         Circle,
         Triangle
     }
     enum ImageType
     {
-        None,
         Fish,
         Pig,
         Bug

@@ -5,8 +5,8 @@
         None,
         Canvas,
         MainMenu,
-        PauseMenu,
         GameMenu,
-        LoadingScreen
+        WinMenu,
+        LoseMenu
     }
 }

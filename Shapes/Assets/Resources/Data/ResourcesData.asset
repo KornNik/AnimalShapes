@@ -15,14 +15,15 @@ MonoBehaviour:
   _cameraPrefab: {fileID: 1309152332432426233, guid: 7998a00cfb5553e4ab4116fa40208f5d, type: 3}
   _gameStatePrefab: {fileID: 7462832337231848308, guid: 5d6dea1a457761045ad76c64eb767455, type: 3}
   _levelsBundle: {fileID: 11400000, guid: 964a45c24c10e364484133a4be74c56a, type: 2}
+  _shapesCreator: {fileID: 1443996430206120156, guid: 93d71c8d47f6b1d4f8e37367bd01a7df, type: 3}
   _screensPrefabs:
     m_keys: 0100000002000000040000000300000005000000
     m_values:
     - {fileID: 8460954994891623692, guid: 20a01256c8dea064185f2c0fe2ca5e33, type: 3}
     - {fileID: 7970510424411973072, guid: 491ad64f4e8cbbf45b359bf5fb6e0c6f, type: 3}
+    - {fileID: 8220597163081674494, guid: 2dcf6f25bcfd6f243a3ba4cee254e9d7, type: 3}
     - {fileID: 705034182132744932, guid: f9f4f3b8f84a68e478c95d6f6d7cdf40, type: 3}
-    - {fileID: 1490178274036686513, guid: 5c3c67f6a1d72c44681dcc5ce032aba8, type: 3}
-    - {fileID: 163278559776798425, guid: f96b69de8372d4245b128078d4f6f60f, type: 3}
+    - {fileID: 1184139503449040287, guid: 70c2d3263a2bbc648bebf9f1402a4bb9, type: 3}
   _audioPrefabs:
     m_keys: 030000000100000002000000
     m_values:

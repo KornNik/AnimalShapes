@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: ShapeBundle
   m_EditorClassIdentifier: 
   _shapes:
-    m_keys: 010000000200000003000000
+    m_keys: 000000000100000002000000
     m_values:
     - {fileID: 11400000, guid: 0b3cf41621fb6994ea838fdb3f617e9a, type: 2}
     - {fileID: 11400000, guid: cee289af85b1a3d4ba43a155bfc8c6c6, type: 2}
     - {fileID: 11400000, guid: 75948d51b490f564f9f123481501fb09, type: 2}
   _insideImages:
-    m_keys: 010000000200000003000000
+    m_keys: 000000000100000002000000
     m_values:
     - {fileID: 11400000, guid: 89dddacd5a6faec49bfcc094851f49c5, type: 2}
     - {fileID: 11400000, guid: c72f2abebb20d664b897894e0dcc6f7f, type: 2}
@@ -30,5 +30,5 @@ MonoBehaviour:
   - {r: 0.40530434, g: 0.56817895, b: 0.8679245, a: 1}
   - {r: 0.6205908, g: 0.8584906, b: 0.31990921, a: 1}
   - {r: 0.58740354, g: 0.36832502, b: 0.8773585, a: 1}
-  _shapesCount: 30
+  _shapesCount: 48
   _minimalShapeGroup: 3

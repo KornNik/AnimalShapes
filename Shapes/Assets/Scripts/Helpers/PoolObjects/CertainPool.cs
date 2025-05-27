@@ -19,6 +19,7 @@ namespace Helpers
         {
             _objectPool = new Dictionary<TPoolableObject, HashSet<IPoolable>>();
             _poolObject = poolObject;
+            _poolablesList = new List<TPoolableObject>(capacityPool);
         }
 
         public override IPoolable GetObject(TPoolableObject poolable)
@@ -43,12 +44,22 @@ namespace Helpers
                 item.ReturnToPool();
             }
         }
-
-        protected override void RemovePool()
+        public override void RemovePool()
         {
             ReturnAllToPool();
             _poolablesList.Clear();
             base.RemovePool();
+        }
+
+        public void ClearPool()
+        {
+            ReturnAllToPool();
+            foreach (var poolable in _poolablesList)
+            {
+                GameObject.Destroy(poolable.gameObject);
+            }
+            _objectPool = new Dictionary<TPoolableObject, HashSet<IPoolable>>();
+            _poolablesList.Clear();
         }
 
         private IPoolable GetAllObjects(HashSet<IPoolable> poolablesHash)

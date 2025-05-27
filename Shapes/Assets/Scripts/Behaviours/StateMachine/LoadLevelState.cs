@@ -7,12 +7,10 @@ namespace Behaviours
     sealed class LoadLevelState : BaseState
     {
         private ILevelLoader _levelLoader;
-        private ShapeFactory _shapeFactory;
 
         public LoadLevelState(GameStateController stateController) : base(stateController)
         {
             _levelLoader = Services.Instance.LevelLoader.ServicesObject;
-            _shapeFactory = new ShapeFactory();
         }
 
         public override void EnterState()
@@ -38,7 +36,7 @@ namespace Behaviours
         }
         private void LoadShapes()
         {
-            _shapeFactory.Create();
+            ShapesConstructEvent.Trigger(ConstructEventType.Create);
         }
         private void StartGameState()
         {

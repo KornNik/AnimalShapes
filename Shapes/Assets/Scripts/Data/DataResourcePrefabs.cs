@@ -11,6 +11,7 @@ namespace Data
         [SerializeField] private GameObject _cameraPrefab;
         [SerializeField] private GameStateBehaviour _gameStatePrefab;
         [SerializeField] private LevelsBundle _levelsBundle;
+        [SerializeField] private ShapesCreator _shapesCreator;
 
         [SerializeField] private SerializableDictionary<ScreenTypes, GameObject> _screensPrefabs;
         [SerializeField] private SerializableDictionary<AudioTypes, GameObject> _audioPrefabs;
@@ -45,6 +46,9 @@ namespace Data
         {
             return _levelsBundle;
         }
-
+        public ShapesCreator GetShapesCreator()
+        {
+            return _shapesCreator;
+        }
     }
 }

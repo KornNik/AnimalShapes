@@ -4,7 +4,11 @@ using UnityEngine;
 
 namespace UI
 {
-    abstract class BaseUI : MonoBehaviour
+    internal interface IBaseUI
+    {
+    }
+
+    abstract class BaseUI : MonoBehaviour, IBaseUI
     {
         public Action ShowUI = delegate { };
         public Action HideUI = delegate { };

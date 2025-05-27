@@ -19,7 +19,9 @@ namespace Behaviours
 
         private async UniTaskVoid DeleteAll()
         {
+            await LoadTask(DestroyShapes);
             await LoadTask(DeleteLevel);
+            await LoadTask(StartMenuState);
         }
         private async UniTask LoadTask(Action loadingAction)
         {
@@ -30,7 +32,12 @@ namespace Behaviours
         {
             _levelLoader.ClearLevelFull();
         }
-        private void StartGameState()
+
+        private void DestroyShapes()
+        {
+            ShapesConstructEvent.Trigger(ConstructEventType.Destroy);
+        }
+        private void StartMenuState()
         {
             ChangeGameStateEvent.Trigger(GameStateType.MenuState);
         }

@@ -56,6 +56,18 @@ PrefabInstance:
       propertyPath: _collider
       value: 
       objectReference: {fileID: 202909267844762881}
+    - target: {fileID: 1612980873580307324, guid: 1d1f2d334c33127458e93e96f3297199, type: 3}
+      propertyPath: _shapeData
+      value: 
+      objectReference: {fileID: 11400000, guid: a27c4c53a532deb4e989b795ccf462ca, type: 2}
+    - target: {fileID: 1612980873580307324, guid: 1d1f2d334c33127458e93e96f3297199, type: 3}
+      propertyPath: _shapeType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105616286623976495, guid: 1d1f2d334c33127458e93e96f3297199, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 6596130d2a6501441a56a125ae3451bf, type: 2}
     - target: {fileID: 3105616286623976495, guid: 1d1f2d334c33127458e93e96f3297199, type: 3}
       propertyPath: m_Simulated
       value: 0
@@ -125,5 +137,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0756981, y: 1.0725608}
+  m_Size: {x: 1.1326315, y: 1.1309593}
   m_EdgeRadius: 0

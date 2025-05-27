@@ -18,12 +18,12 @@ namespace UI
 
         public static ScreenInterface GetInstance()
         {
-            return _instance ?? (_instance = new ScreenInterface());
+            return _instance ??= new ScreenInterface();
         }
 
         public void Execute(ScreenTypes screenType)
         {
-            if (CurrentWindow != null)
+            if (CurrentWindow)
             {
                 CurrentWindow.Hide();
             }
@@ -36,8 +36,11 @@ namespace UI
                 case ScreenTypes.MainMenu:
                     _currentWindow = _screenFactory.GetMainMenu();
                     break;
-                case ScreenTypes.PauseMenu:
-                    _currentWindow = _screenFactory.GetPauseMenu();
+                case ScreenTypes.WinMenu:
+                    _currentWindow = _screenFactory.GetWinMenu();
+                    break;
+                case ScreenTypes.LoseMenu:
+                    _currentWindow = _screenFactory.GetLoseMenu();
                     break;
                 default:
                     break;
@@ -60,10 +63,15 @@ namespace UI
                     _screenFactory.GetMainMenu().HideUI += listenerScreen.HideScreen;
                     _screenFactory.GetMainMenu().Hide();
                     break;
-                case ScreenTypes.PauseMenu:
-                    _screenFactory.GetPauseMenu().ShowUI += listenerScreen.ShowScreen;
-                    _screenFactory.GetPauseMenu().HideUI += listenerScreen.HideScreen;
-                    _screenFactory.GetPauseMenu().Hide();
+                case ScreenTypes.WinMenu:
+                    _screenFactory.GetWinMenu().ShowUI += listenerScreen.ShowScreen;
+                    _screenFactory.GetWinMenu().HideUI += listenerScreen.HideScreen;
+                    _screenFactory.GetWinMenu().Hide();
+                    break;
+                case ScreenTypes.LoseMenu:
+                    _screenFactory.GetLoseMenu().ShowUI += listenerScreen.ShowScreen;
+                    _screenFactory.GetLoseMenu().HideUI += listenerScreen.HideScreen;
+                    _screenFactory.GetLoseMenu().Hide();
                     break;
                 default:
                     break;
@@ -84,10 +92,15 @@ namespace UI
                     _screenFactory.GetMainMenu().HideUI -= listenerScreen.HideScreen;
                     _screenFactory.GetMainMenu().Hide();
                     break;
-                case ScreenTypes.PauseMenu:
-                    _screenFactory.GetPauseMenu().ShowUI -= listenerScreen.ShowScreen;
-                    _screenFactory.GetPauseMenu().HideUI -= listenerScreen.HideScreen;
-                    _screenFactory.GetPauseMenu().Hide();
+                case ScreenTypes.WinMenu:
+                    _screenFactory.GetWinMenu().ShowUI -= listenerScreen.ShowScreen;
+                    _screenFactory.GetWinMenu().HideUI -= listenerScreen.HideScreen;
+                    _screenFactory.GetWinMenu().Hide();
+                    break;
+                case ScreenTypes.LoseMenu:
+                    _screenFactory.GetLoseMenu().ShowUI -= listenerScreen.ShowScreen;
+                    _screenFactory.GetLoseMenu().HideUI -= listenerScreen.HideScreen;
+                    _screenFactory.GetLoseMenu().Hide();
                     break;
                 default:
                     break;

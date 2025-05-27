@@ -7,6 +7,7 @@ namespace Helpers.Managers
         public const string UI = "UI";
         public const string DEFAULT = "Default";
         public const string GROUND = "Ground";
+        public const string SHAPE = "Shape";
 
         public const int DEFAULT_LAYER = 0;
         
@@ -15,10 +16,12 @@ namespace Helpers.Managers
             DefaultLayer = LayerMask.GetMask(DEFAULT);
             UiLayer = LayerMask.GetMask(UI);
             Ground = LayerMask.GetMask(GROUND);
+            Shape = LayerMask.GetMask(SHAPE);
         }
         
         public static int DefaultLayer { get; }
         public static int UiLayer { get; }
         public static int Ground { get; }
+        public static int Shape { get; }
     }
 }

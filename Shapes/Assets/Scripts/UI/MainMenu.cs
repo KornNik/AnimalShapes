@@ -6,14 +6,15 @@ using Behaviours;
 
 namespace UI
 {
-    class MainMenu : BaseUI
+    sealed class MainMenu : BaseUI
     {
+        [Header("Buttons")]
         [SerializeField] private Button _startGameButton;
         [SerializeField] private Button _quitGameButton;
-        [SerializeField] private LayoutGroup _buttonsGroup;
-
-        private RectTransform _rectTransform;
-        private CanvasGroup _canvasGroup;
+        [Header("Tween")]
+        [SerializeField] private RectTransform _rectTransform;
+        [SerializeField] private CanvasGroup _canvasGroup;
+        
         private DefaultScreenTweens _screenTweens;
 
         protected override void Awake()
@@ -25,9 +26,6 @@ namespace UI
                 GetTweenSettings(TweenSettingsType.ScreenDefaultSettings);
             var anchorsSettings = Services.Instance.DatasBundle.ServicesObject.
                 GetData<TweensSettingsBundle>().GetAnchorsSettings(ScreenAnchorsTweenType.TopToBottom);
-
-            _rectTransform = GetComponent<RectTransform>();
-            _canvasGroup = GetComponent<CanvasGroup>();
 
             _screenTweens = new DefaultScreenTweens(_rectTransform, _canvasGroup,
                 tweenSettings, anchorsSettings, this.gameObject);

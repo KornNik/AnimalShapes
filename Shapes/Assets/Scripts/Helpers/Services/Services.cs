@@ -3,7 +3,6 @@ using UnityEngine;
 using Behaviours;
 using Data;
 using Helpers.Extensions;
-using Controllers;
 
 namespace Helpers
 {
@@ -17,6 +16,7 @@ namespace Helpers
         public Service<DatasBundle> DatasBundle { get; private set; }
         public Service<ILevelLoader> LevelLoader { get; private set; }
         public Service<Level> Level { get; private set; }
+        public Service<IShapesCreator> ShapesCreator { get; private set; }
         public Service<IAudioPlayer> AudioPlayer { get; private set; }
         public Service<ITimeController> TimeController { get; private set; }
         public Service<GameStateBehaviour> GameStateBehavior { get; private set; }
@@ -30,16 +30,17 @@ namespace Helpers
 
         private void Initialize()
         {
+            Level = new Service<Level>();
             Inputs = new Service<InputActions>();
             CameraService = new Service<Camera>();
             DatasBundle = new Service<DatasBundle>();
             AudioPlayer = new Service<IAudioPlayer>();
             LevelLoader = new Service<ILevelLoader>();
+            ShapesCreator = new Service<IShapesCreator>();
             TimeController = new Service<ITimeController>();
             GameStateBehavior = new Service<GameStateBehaviour>();
             SettingsController = new Service<ISettingsController>();
             DataResourcePrefabs = new Service<DataResourcePrefabs>();
-            Level = new Service<Level>();
         }
 
     }

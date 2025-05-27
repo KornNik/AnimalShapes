@@ -8,18 +8,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2014591478288824945, guid: 93306f2325ccd8c4aa47f765e99e9c3e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3157030270264976313, guid: 93306f2325ccd8c4aa47f765e99e9c3e, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+    - target: {fileID: 3996679436087914411, guid: 93306f2325ccd8c4aa47f765e99e9c3e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4239925505478296994, guid: 93306f2325ccd8c4aa47f765e99e9c3e, type: 3}
       propertyPath: m_Name
       value: Circle Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239925505478296994, guid: 93306f2325ccd8c4aa47f765e99e9c3e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4378812350127749048, guid: 93306f2325ccd8c4aa47f765e99e9c3e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5263298098030424511, guid: 93306f2325ccd8c4aa47f765e99e9c3e, type: 3}
       propertyPath: _collider
       value: 
       objectReference: {fileID: 6325192531607175856}
+    - target: {fileID: 5263298098030424511, guid: 93306f2325ccd8c4aa47f765e99e9c3e, type: 3}
+      propertyPath: _shapeData
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d2ec945b74e4c74a93ec344f4b11ede, type: 2}
+    - target: {fileID: 5263298098030424511, guid: 93306f2325ccd8c4aa47f765e99e9c3e, type: 3}
+      propertyPath: _shapeType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5440511640648641312, guid: 93306f2325ccd8c4aa47f765e99e9c3e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.354
@@ -116,4 +140,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5347681
+  m_Radius: 0.56568944

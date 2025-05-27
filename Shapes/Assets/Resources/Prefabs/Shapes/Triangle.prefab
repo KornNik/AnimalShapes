@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3549959879320361664}
   - component: {fileID: 1086463035250110711}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7783161047174752643}
   - component: {fileID: 4915708979325085444}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InsideImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 1612980873580307324}
   - component: {fileID: 3105616286623976495}
   - component: {fileID: 8153794853823274850}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,6 +220,7 @@ MonoBehaviour:
   _modelSpriteRenderer: {fileID: 8410628953569227130}
   _outlineSpriteRenderer: {fileID: 1086463035250110711}
   _insideImageSpriteRenderer: {fileID: 4915708979325085444}
+  _shapeData: {fileID: 11400000, guid: cfef22ac0a17225429aee3e160b520eb, type: 2}
 --- !u!50 &3105616286623976495
 Rigidbody2D:
   serializedVersion: 4
@@ -236,7 +237,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6596130d2a6501441a56a125ae3451bf, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -291,9 +292,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.5314208, y: -0.31043506}
-      - {x: -0.0029538274, y: 0.6169994}
-      - {x: -0.5213576, y: -0.28967416}
+    - - {x: 0.5863945, y: -0.3319465}
+      - {x: 0.0018265843, y: 0.66480255}
+      - {x: -0.571551, y: -0.33269703}
   m_UseDelaunayMesh: 0
 --- !u!1 &7502863871761694056
 GameObject:
@@ -305,7 +306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3686079503567989902}
   - component: {fileID: 8410628953569227130}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}

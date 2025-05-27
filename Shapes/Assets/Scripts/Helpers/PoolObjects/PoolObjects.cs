@@ -26,7 +26,7 @@ namespace Helpers
             transform.localRotation = Quaternion.identity;
             transform.gameObject.SetActive(false);
         }
-        protected virtual void RemovePool()
+        public virtual void RemovePool()
         {
             Object.Destroy(_poolTransform.gameObject);
         }
